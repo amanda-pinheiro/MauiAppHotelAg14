@@ -4,28 +4,31 @@
              x:Class="MauiAppHotel1.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray100}">
+             BackgroundColor="#1B2430">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
 
 
-        <Label 
+        <Label HorizontalOptions="Center"
             Text="Calculo da Diária"
-            FontFamily="Kalam"
-            FontSize="50" 
-            TextColor="{StaticResource Primary}"/>
+            FontFamily="QuickSand"
+            FontSize="40" 
+            TextColor="#D6D5A8"/>
 
-        <Frame>
+        <Frame Padding="10" Margin="10" 
+               BackgroundColor="#D6D5A8"
+               BorderColor="#816797">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos:" />
+                           Text="Adultos:" 
+                           FontFamily="QuickSand"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor = "#51557E"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -36,10 +39,11 @@
                              Increment="1" />
 
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças:" />
+                           Text="Crianças:" 
+                           FontFamily="QuickSand"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="#51557E"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -53,41 +57,52 @@
                 <Label Text="Escolha sua Suíte"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
-                               TextColor="{StaticResource Primary}"/>
+                               TextColor="#51557E"
+                       Padding="10"/>
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação" 
-                        ItemDisplayBinding="{Binding Descricao}"/>
+                        ItemDisplayBinding="{Binding Descricao}"
+                        FontFamily="QuickSand"/>
 
                 <Frame Padding="10"
-                       Margin="10">
+                       Margin="10"
+                       BackgroundColor="#D6D5A8"
+                       BorderColor="#816797">
                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia" />
+                        <Label Text="Período da Estadia" 
+                               FontFamily="QuickSand"/>
 
                         <HorizontalStackLayout>
-                            <Label Text="Check-in"/>
+                            <Label Text="Check-in" Padding="10"
+                                   HorizontalTextAlignment="Start"
+                                   FontFamily="QuickSand"/>
                             <DatePicker x:Name="dtpck_chekin"
                                         DateSelected="dtpck_chekin_DateSelected"
-                                        Format="dd/MM/yyyy"/>
+                                        Format="dd/MM/yyyy"
+                                        HorizontalOptions="EndAndExpand"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Check-out"/>
+                            <Label Text="Check-out" Padding="10" 
+                                   HorizontalTextAlignment="Start"
+                                   FontFamily="QuickSand"/>
                             <DatePicker x:Name="dtpck_chekout"
-                                        Format="dd/MM/yyyy"/>
+                                        Format="dd/MM/yyyy"
+                                        HorizontalOptions="EndAndExpand"/>
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked"/>
+                <Button Text="Avançar" Clicked="Button_Clicked" BackgroundColor="#816797" BorderColor="#1B2430"/>
 
             </VerticalStackLayout>
 
         </Frame>
         
         <VerticalStackLayout HorizontalOptions="End">
-            <Button Text="Sobre" Clicked="sobreClick" />
+            <Button Text="Sobre" Clicked="sobreClick" BackgroundColor="#816797" BorderColor="#1B2430"/>
         </VerticalStackLayout>
 
 
