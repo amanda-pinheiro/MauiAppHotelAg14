@@ -56,7 +56,8 @@
                                TextColor="{StaticResource Primary}"/>
 
                 <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                        Title="Selecione sua Acomodação" 
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="10">
@@ -66,7 +67,9 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in"/>
                             <DatePicker x:Name="dtpck_chekin"
-                                        Format="dd/MM/yyyy"/>                        </HorizontalStackLayout>
+                                        DateSelected="dtpck_chekin_DateSelected"
+                                        Format="dd/MM/yyyy"/>
+                        </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out"/>
