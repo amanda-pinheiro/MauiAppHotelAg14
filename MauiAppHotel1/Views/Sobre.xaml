@@ -3,23 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel1.Views.Sobre"
              Title="Sobre"
-             BackgroundColor="LightGray"  
-
-    Padding="20">
+             BackgroundColor="#1B2430"
+             Padding="20">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          HorizontalOptions="Center"
                          Spacing="25">
 
         <Label Text="Quem desenvolveu o APP?"
-               FontFamily="Kalam"
-               FontSize="32"
-               TextColor="Black"
+               FontFamily="QuickSand"
+               FontSize="40" 
+               TextColor="#D6D5A8"
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                FontAttributes="Bold"/>
 
-        <Frame BackgroundColor="White"
+        <Frame BackgroundColor="#D6D5A8"
                CornerRadius="15"
                Padding="20"
                HasShadow="True"
@@ -27,7 +26,8 @@
 
             <Label Text="Este APP foi desenvolvido pela aluna Amanda de Jesus Pinheiro, do curso de Desenvolvimento de Sistemas do Centro Paula Souza."
                    FontSize="18"
-                   TextColor="Black"
+                   FontFamily="QuickSand"
+                   TextColor="#1B2430"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"
                    LineHeight="1.3" />
