@@ -80,7 +80,8 @@
                             <DatePicker x:Name="dtpck_chekin"
                                         DateSelected="dtpck_chekin_DateSelected"
                                         Format="dd/MM/yyyy"
-                                        HorizontalOptions="EndAndExpand"/>
+                                        HorizontalOptions="EndAndExpand"
+                                        FontFamily="QuickSand"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
@@ -89,7 +90,8 @@
                                    FontFamily="QuickSand"/>
                             <DatePicker x:Name="dtpck_chekout"
                                         Format="dd/MM/yyyy"
-                                        HorizontalOptions="EndAndExpand"/>
+                                        HorizontalOptions="EndAndExpand"
+                                        FontFamily="QuickSand"/>
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
